@@ -1,0 +1,9 @@
+[package]
+name = "mouse_clicker_core"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+thiserror = { workspace = true }
+tokio = { workspace = true }
+windows-sys = { workspace = true }
