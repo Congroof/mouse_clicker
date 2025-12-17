@@ -1,7 +1,13 @@
-# Tauri + React + Typescript
+## 鼠标连点器
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
+基于 Rust + Tauri 开发的一个轻量、简洁的鼠标自动连点工具
 
-## Recommended IDE Setup
+## ✨ 功能特性
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+- 🎯 **自定义点击间隔**
+- 🔢 **点击次数控制** - 0 则无限制
+- 🖱️ **多键位支持** - 支持模拟鼠标左键、右键、中键点击
+- ⌨️ **全局快捷键** - F1-F12 快捷键配置
+- 💻 **轻量简洁**
+
+![应用截图](./app.png)

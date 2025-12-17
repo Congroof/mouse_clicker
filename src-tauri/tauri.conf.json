@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "tauri-app",
+  "productName": "mouse-clicker",
   "version": "0.1.0",
-  "identifier": "com.congroof.mouse_clicker",
+  "identifier": "com.congroof.mouse-clicker",
   "build": {
     "beforeDevCommand": "pnpm dev",
     "devUrl": "http://localhost:1420",
@@ -12,15 +12,34 @@
   "app": {
     "windows": [
       {
-        "title": "tauri-app",
-        "width": 800,
-        "height": 600
+        "label": "main",
+        "title": "鼠标连点器",
+        "width": 280,
+        "height": 180,
+        "resizable": false,
+        "maximizable": false,
+        "alwaysOnTop": true
       }
     ],
     "security": {
-      "csp": null
+      "csp": null,
+      "capabilities": [
+        {
+          "identifier": "main-capability",
+          "description": "Main app capabilities",
+          "windows": ["main"],
+          "permissions": [
+            "core:default",
+            "notification:default",
+            "notification:allow-is-permission-granted",
+            "notification:allow-request-permission",
+            "notification:allow-notify"
+          ]
+        }
+      ]
     }
   },
+  "plugins": {},
   "bundle": {
     "active": true,
     "targets": "all",
